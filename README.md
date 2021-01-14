@@ -20,5 +20,19 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+
+
+
+### Project 
+
+- Todo List를 Vue로 만들어 보기
+
+
+
+### 컴포넌트 구조
+
+- Header.vue
+- Todo.vue
+- Footer.vue 
+
