@@ -30,9 +30,15 @@ npm run lint
 
 
 
+---
+
 ### 컴포넌트 구조
 
 - Header.vue
 - Todo.vue
 - Footer.vue 
+
+---
+
+
 

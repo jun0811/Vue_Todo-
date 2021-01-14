@@ -1,32 +1,28 @@
 <template>
   <div id="app">
-    {{message}}
-    <h2> 뒤집힌</h2>
-    {{ reverseMessage}}
+    <section class="todoapp">
+      <Header/>
+      <Todo :todos="todos"/>
+      <Footer/>
+    </section>
   </div>
 </template>
 
 <script>
+import "./assets/css/main.css";
+
+import Header from "./components/Header";
+import Todo from "./components/Todo";
+import Footer from "./components/Footer";
 export default {
-  name: 'App',
-  data () {return{
-    message : 'hello Vue!'
-  }},
-  computed: {
-    reverseMessage(){
-      return this.message.split("").reverse().join("")
-    }
+  components: {
+    Header,
+    Todo,
+    Footer
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
